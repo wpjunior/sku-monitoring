@@ -14,7 +14,7 @@ import (
 
 var priceGauge = prometheus.NewGaugeVec(prometheus.GaugeOpts{
 	Name: "gcp_sku_price",
-	Help: "Current temperature of the CPU.",
+	Help: "Current price of SKU at GCP.",
 }, []string{"sku", "description", "region"})
 
 var monitoryRegions = map[string]bool{
